@@ -1,13 +1,12 @@
 class Company
+  attr_accessor :name
+
 
   def initialize(name, employee_list = [])
     @name = name
     @employees = employee_list
   end
 
-  def name
-    @name
-  end
 
   def company
     p "Welcome to #{@name}. The middleman of paper. This is our employee list"
@@ -20,6 +19,9 @@ end
 
 
 class Employee
+  attr_accessor :name
+  attr_accessor :title
+  attr_accessor :start_date
 
   def initialize(name, title, start_date)
     @name = name
@@ -27,20 +29,9 @@ class Employee
     @start_date = start_date
   end
 
-  def name
-    @name
-  end
-
-  def title
-    @title
-  end
-
-  def start_date
-    @start_date
-  end
-
   def about
-    p "Welcome #{@name} to the company. Your job title is #{@title}. You can begin working on #{@start_date}."
+    p "Welcome #{@name} to the company. Your job title is #{@title}.
+       You can begin working on #{@start_date}."
   end
 
 end
