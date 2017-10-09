@@ -19,9 +19,8 @@ end
 
 
 class Employee
-  attr_accessor :name
-  attr_accessor :title
-  attr_accessor :start_date
+  attr_accessor :name, :title, :start_date
+
 
   def initialize(name, title, start_date)
     @name = name
