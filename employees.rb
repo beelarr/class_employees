@@ -1,3 +1,5 @@
+require 'pry'
+require 'awesome_print'
 
 class Company
   attr_accessor :name
@@ -14,6 +16,7 @@ class Company
     @employees.each do |worker_bee|
       p worker_bee.name
     end
+    binding.pry
   end
 
 end
